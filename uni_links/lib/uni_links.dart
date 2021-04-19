@@ -6,6 +6,8 @@ import 'package:uni_links2_platform_interface/uni_links_platform_interface.dart'
 /// may be null.
 Future<String?> getInitialLink() => UniLinksPlatform.instance.getInitialLink();
 
+Future<void> clear() => UniLinksPlatform.instance.clear();
+
 /// A convenience method that returns the initially stored link
 /// as a new [Uri] object.
 ///
