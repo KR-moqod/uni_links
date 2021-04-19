@@ -6,8 +6,10 @@ environment:
   sdk: '>=2.12.0 <3.0.0'
   flutter: '>=2.0.1 <3.0.0'
 dependencies: 
-  uni_links2_platform_interface: ^1.0.0+2
-  uni_links_web2: ^0.1.0+2
+  uni_links2_platform_interface:
+    git:
+      url: http://github.com/KR-moqod/uni_links.git
+      path: uni_links_platform_interface
   flutter: 
     sdk: flutter
 dev_dependencies: 
