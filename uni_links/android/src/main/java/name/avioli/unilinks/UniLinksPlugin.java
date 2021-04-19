@@ -114,7 +114,11 @@ public class UniLinksPlugin
             result.success(initialLink);
         } else if (call.method.equals("getLatestLink")) {
             result.success(latestLink);
-        } else {
+        } else if (call.method.equals("clear")) {
+      initialLink = null;
+      latestLink = null;
+      if (changeReceiver != null) changeReceiver.onReceive(registrar.context(), null);
+    } else {
             result.notImplemented();
         }
     }
