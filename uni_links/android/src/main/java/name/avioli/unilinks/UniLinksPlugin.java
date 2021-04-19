@@ -117,7 +117,7 @@ public class UniLinksPlugin
         } else if (call.method.equals("clear")) {
       initialLink = null;
       latestLink = null;
-      if (changeReceiver != null) changeReceiver.onReceive(registrar.context(), null);
+      if (changeReceiver != null) changeReceiver.onReceive(context, null);
     } else {
             result.notImplemented();
         }
