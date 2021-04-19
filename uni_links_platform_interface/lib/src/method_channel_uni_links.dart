@@ -13,4 +13,8 @@ class MethodChannelUniLinks extends UniLinksPlatform {
   late final Stream<String?> linkStream = _eChannel
       .receiveBroadcastStream()
       .map<String?>((dynamic link) => link as String?);
+  
+    @override
+  Future<void> clear() =>
+      _mChannel.invokeMethod<void>('clear');
 }
