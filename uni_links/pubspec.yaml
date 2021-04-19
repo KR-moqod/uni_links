@@ -10,6 +10,7 @@ dependencies:
     git:
       url: http://github.com/KR-moqod/uni_links.git
       path: uni_links_platform_interface
+      ref: 9c0e4866bcd4f8c9e0096ab54661335716f4ea1f
   flutter: 
     sdk: flutter
 dev_dependencies: 
