@@ -77,6 +77,11 @@ Stream<Uri> getUriLinksStream() {
   );
 }
 
+Future<void> clear() async {
+  await _mChannel.invokeMethod('clear');
+  return;
+}
+
 ///iOS only, start listening for NFC URI payloads
 void startNFCSession(String dialogMsg) {
   if(Platform.isIOS) {
