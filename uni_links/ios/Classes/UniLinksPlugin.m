@@ -102,6 +102,13 @@ static id _instance;
           _nfcCallbacks = nil;
       }
   }
+  
+  else if ([@"clear" isEqualToString:call.method]) {
+      self.initialLink = nil;
+      self.latestLink = nil;
+      if (_eventSink) _eventSink(@"");
+  }
+  
   else {
     result(FlutterMethodNotImplemented);
   }
