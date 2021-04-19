@@ -41,4 +41,7 @@ abstract class UniLinksPlatform extends PlatformInterface {
   /// The [Stream] emits opened links as [String]s.
   Stream<String?> get linkStream => throw UnimplementedError(
       'getLinksStream has not been implemented on the current platform.');
+  
+  Future<void> clear() => throw UnimplementedError(
+      'clear has not been implemented on the current platform.');
 }
